@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="video-holder">
+        <video height="400" width="700" id="video-player">
+          <source id="video-source" src="./video/car3.mp4" type="video/mp4"></source>
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+          <span class="video-time current-time" id="video-current-time">00:00:00</span>
+          <span class="video-time full-time" id="video-full-time">00:00:00</span>
+          <input class="video-progressbar" type="range" id="video-progressbar" min="0" max="100">
+          <div class="controllers">
+            <button class="control-btn backward-btn" type="button" id="backrward-btn"><img src="https://img.icons8.com/metro/26/ffffff/fast-forward.png"></button>
+            <button class="control-btn prev-btn" type="button" id="prev-btn"><img src="https://img.icons8.com/fluent-systems-filled/26/ffffff/end.png"></button>
+            <button class="control-btn play-pause-btn" type="button" id="play-pause-btn"><img src="https://img.icons8.com/ios-glyphs/24/ffffff/play--v1.png"></button>
+            <button class="control-btn next-btn" type="button" id="next-btn"><img src="https://img.icons8.com/fluent-systems-filled/26/ffffff/end.png"></button>
+            <button class="control-btn forward-btn" type="button" id="forward-btn"><img src="https://img.icons8.com/metro/26/ffffff/fast-forward.png"></button>
+            <div class="sound-controls">
+              <button class="control-btn" type="button" id="mute-btn">
+                <img src="./img/volume-up-interface-symbol-1.svg" id="volume-icon" width="25" alt="Speaker">
+              </button>
+              <input class="sound-progressbar" type="range" id="video-sound-progressbar" min="0" max="100">
+            </div>
+            <button class="control-btn full-screen" type="button" id="full-screen"><img src="https://img.icons8.com/wired/64/ffffff/full-screen.png"></button>
+          </div>
+        </div>
+      </div>
+      <div class="video-title" id="video-title">
+        <h1></h1>
+      </div>
+
+      <!-- Advertising -->
+      <!-- <ul class="ads-list">
+        <li class="ads-item">
+          <a href="https://t.me/najimov">
+            <img src="./img/ads/najimov.jpg" alt="najimov">
+            <h2>Big O Nonation</h2>
+          </a>
+        </li>
+      </ul> -->
+
+    </div>
+  </header>
+
+  <script defer type="module" src="./js/main.js"></script>
+</body>
+</html>
